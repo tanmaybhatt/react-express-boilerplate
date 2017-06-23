@@ -9,13 +9,16 @@ const componentHTML = ReactDOM.renderToString(
 );
 
 const html = `
+    <!DOCTYPE html>
     <html>
         <head>
-            <title>Quiz Wall</title>
+            <title>Hello React</title>
+            <link rel="stylesheet" href="./css/style.css"/>
         </head>
         <body>
-            <div id="react-view">${componentHTML}</div>
+            <div id="content">${componentHTML}</div>
         </body>
+        <script src="./js/bundle.js"></script>
     </html>
 `;
 
